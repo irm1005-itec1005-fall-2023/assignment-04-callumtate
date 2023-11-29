@@ -21,7 +21,7 @@ contents = [];
 
 // DOM Elements
 let appContainer = document.getElementById(appID);
-create.addEventListener("add", formHandler);
+form.addEventListener("add", formHandler);
 //
 // Functions
 //
@@ -49,6 +49,11 @@ function inititialise() {
     console.error("Error: Could not find app contianer");
     return;
   }
+
+btnd.addEventListener("click", removeHandler);
+function removeHandler() {
+  contents.remove();
+}
 
   // Create an h1 and add it to our app
   const h1 = document.createElement("h1");
