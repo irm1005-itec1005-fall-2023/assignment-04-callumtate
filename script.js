@@ -38,7 +38,7 @@ function formHandler(event) {
 function add(contents) {
   const list = document.createElement("ul");
   const item = document.createElement("li");
-  list.appendChild(item);
+  list.appendChild(contents[last]);
 
 }
 function inititialise() {
