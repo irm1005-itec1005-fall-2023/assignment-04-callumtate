@@ -29,11 +29,9 @@ form.addEventListener("add", formHandler);
 // Add a heading to the app container
 function formHandler(event) {
   event.preventDefault();
-  const input = document.getElementById("create");
-  const value = input.value;
+  
   contents.push(value);
   console.log(contents);
-  add(contents);
 }
 
 
